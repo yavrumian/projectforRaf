@@ -1,5 +1,5 @@
-{Email} = require('./models/email');
-const _ = require('lodash');
+const _ = require('lodash'),
+	{Email} = require('../models/email');
 
 exports.addData = async (req, res) =>{
 	try {

@@ -7,7 +7,7 @@ var Contact = mongoose.model('Contact', {
 		trim: true
 	},
 	email: {
-		type: Email,
+		type: String,
 		required: true,
 		trim: true
 	},

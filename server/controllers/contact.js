@@ -1,5 +1,5 @@
-{Contact} = require('./models/contact');
-const _ = require('lodash');
+const _ = require('lodash'),
+	{Contact} = require('../models/contact')
 
 exports.addData = async (req, res) =>{
 	try {

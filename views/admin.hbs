@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Admin Panel</title>
+        <style>
+        table{
+            border: 2px black solid
+        }
+        td{
+            border: 1px black solid
+        }
+        </style>
+    </head>
+    <body>
+        <h3>Emails</h3>
+        <table>
+            {{#emails}}
+            <tr>
+                <td>{{email}}<td>
+            </tr>
+            {{/emails}}
+
+        </table>
+        <h3>Contacts</h3>
+        <table>
+            {{#contacts}}
+            <tr>
+                <td>
+                    <b>fullName</b>: {{fullName}}<br>
+                    <b>email</b>: {{email}}<br>
+                    <b>phone</b>: {{phone}}<br>
+                    <b>service</b>: {{service}}<br>
+                    <b>productType</b>: {{productType}}<br>
+                    <b>budgetMin</b>: {{budgetMin}}<br>
+                    <b>buggetMax</b>: {{budgetMax}}<br>
+                    <b>message</b>: {{message}}<br>
+                <td>
+            </tr>
+            {{/contacts}}
+
+        </table>
+    </body>
+</html>
